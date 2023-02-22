@@ -1,0 +1,76 @@
+.contract {
+    border: 2px solid red;
+
+    .title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 56px;
+        color: #000000;
+        text-align: center;
+
+        span {
+            color: rgba(203, 59, 75, 1);
+        }
+    }
+
+    .clarity-smart-contract {
+        position: relative;
+        height: 280px;
+
+        h5 {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            color: #CA704E;
+            position: absolute;
+            width: 150px;
+            left: 31%;
+            top: 30%;
+            border: 2px solid red;
+        }
+    }
+}
+
+
+@include for-smallest-phones {
+    .contract {
+        .clarity-smart-contract {
+            h5 {
+                font-size: 10px;
+                width: 107px;
+                left: 33%;
+                top: 55px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .contract {
+        .title {
+            font-size: 22px;
+        }
+
+        .clarity-smart-contract {
+            height: 400px;
+            border: 2px solid red;
+
+            h5 {
+                font-size: 15px;
+                width: 150px;
+                left: 29%;
+                top: 30%;
+            }
+        }
+    }
+}
+
+@include for-tablet-potrait-up {}
+
+@include for-tablet-landscape-up {}
+
+@include for-desktop-up {}
+
+@include for-big-desktop-up {}
