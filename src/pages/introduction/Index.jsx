@@ -1,6 +1,7 @@
 import React from 'react'
 import headerImg from "../../assests/header-img.png"
 import poxImg from "../../assests/proof-of-transfer.png"
+import blockchain from "../../assests/blockchain.png"
 
 const Introduction = () => {
     return (
@@ -24,14 +25,18 @@ const Introduction = () => {
                     the Bitcoin blockchain more easily. In particular, it allows us to verify whether a Bitcoin transaction was
                     actually mined on the Bitcoin blockchain.
                 </p>
-                <div className="grey-box"></div>
+                <div className="grey-box">
+                    <h3>Any Bitcoin transaction can be verified that has 8 or less input parameters and 8 or less output parameters.
+                    </h3>
+                </div>
             </article>
 
             <article className='merkle-proof'>
                 <p>This library explains how stacks parses bitcoin transactions and block headers and verifies merkle proofs
                     from the bitcoin chain .
                 </p>
-                <div className="img"></div>
+                <div className="img">
+                    <img src={blockchain} alt="blockchain" /></div>
             </article>
         </main>
     )

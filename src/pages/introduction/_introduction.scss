@@ -51,24 +51,34 @@
         }
 
         .grey-box {
-            width: 80%;
+            width: 90%;
             margin: 20px auto 0 auto;
             height: 80px;
-            background: $greyColor;
+            background: rgba(241, 241, 241, 1);
+            @include flex(center, center, row);
+            border-left: 10px solid #CCCCCC;
+            padding: 0 1rem;
+
+            h3 {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 22px;
+            }
         }
     }
 
     .merkle-proof {
+        padding-bottom: 80px;
+
         p {
             font-size: 16px;
             padding: 0 14px;
+            margin-bottom: 40px;
         }
 
         .img {
-            border: 2px solid blue;
-            width: 80%;
-            height: 200px;
-            margin: 20px auto 0 auto;
+            width: 90%;
+            margin: 70px auto 0 auto;
         }
     }
 }
@@ -104,8 +114,7 @@
             }
 
             .img {
-                width: 80%;
-                height: 200px;
+                width: 90%;
             }
         }
     }
@@ -151,7 +160,6 @@
 
             .img {
                 width: 80%;
-                height: 200px;
                 margin: 20px auto 0 auto;
             }
         }
@@ -198,6 +206,11 @@
             .grey-box {
                 width: 80%;
                 height: 80px;
+
+                h3 {
+                    font-size: 21px;
+                    line-height: 35px;
+                }
             }
         }
 
@@ -208,8 +221,7 @@
             }
 
             .img {
-                width: 80%;
-                height: 200px;
+                width: 60%;
                 margin: 20px auto 0 auto;
             }
         }
