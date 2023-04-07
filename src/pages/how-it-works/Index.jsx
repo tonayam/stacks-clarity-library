@@ -99,7 +99,11 @@ const HowItWorks = () => {
         <h4>Applications that use the clarity bitcoin library:</h4>
         <p>
           <strong>CATARAMAN SWAP</strong>{' '}
-          <a href='https://docs.catamaranswaps.org/en/latest/' rel='noreferrer'>
+          <a
+            href='https://docs.catamaranswaps.org/en/latest/'
+            rel='noreferrer'
+            target='_blank'
+          >
             (https://docs.catamaranswaps.org/en/latest/)
           </a>{' '}
           catamaran swap is using the concat method.

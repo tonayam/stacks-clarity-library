@@ -1,6 +1,6 @@
 nav {
     padding: 20px 14px;
-    @include flex(center, space-between, row);
+    @include flex(center, center, row);
 
     .logo {
         h2 {
