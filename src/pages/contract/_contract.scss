@@ -83,6 +83,10 @@
             font-size: 16px;
             font-size: 400;
             margin: 10px 0;
+
+            &.options {
+                margin-top: 20px;
+            }
         }
 
         ul {
@@ -96,7 +100,7 @@
         }
 
         ol {
-            padding-left: 14px;
+            padding-left: 24px;
             margin: 20px 0;
 
             li {
@@ -415,7 +419,7 @@
             }
 
             ol {
-                padding-left: 16px;
+                padding-left: 40px;
 
                 li {
                     font-size: 18px;

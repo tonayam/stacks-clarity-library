@@ -8,33 +8,27 @@ const Contract = () => {
       <h1 className='title'>
         It's All About <span>Clarity</span>
       </h1>
-
       <div className='clarity-smart-contract'>
         <h5>Clarity smart Contract</h5>
         <img src={claritySmartContract} alt='clarity smart contract' />
       </div>
-
       <div className='clarity-stacks'>
         <p>
-          <strong>The contact</strong> is made with the{' '}
-          <span>clarity language</span> of the stacks blockchain and contains
-          public and read only functions that help verify bitcoin transactions
-          and blocks through a <span>merkle tree.</span>
+          <strong>The contract</strong> is written in{' '}
+          <span>Clarity language</span> of the Stacks blockchain and contains
+          read only functions that help verify bitcoin transactions through
+          <span>block headers</span> and <span>merkle trees.</span>
         </p>
-
         <div className='img'>
           <img src={clarityStacks} alt='clarity stacks' />
         </div>
       </div>
-
       <div className='submitting-transc'>
         <h4>Submitting Bitcoin transactions to the stacks network</h4>
         <p>
-          Once a proof is assembled, the entirety of the proof is sent to a
-          Clarity smart contract endpoint. This works with a stacks contract
-          call with the parameters containing the raw transaction or a
-          decomposed transaction object, block height and the Merkle proof,a
-          helper functions in JavaScript can be found here{' '}
+          If you want to submit a bitcoin transaction to the stack network, a
+          merkle proof needs to be assembled off-chain. A helper functions in
+          JavaScript can be found here {` `}
           <a
             href='https://github.com/friedger/stacks-swaps/blob/main/src/lib/btcTransactions.js'
             target='_blank'
@@ -42,6 +36,9 @@ const Contract = () => {
           >
             https://github.com/friedger/stacks-swaps/blob/main/src/lib/btcTransactions.js
           </a>
+          {` `}. The entirety of the proof is sent to a Clarity smart contract
+          endpoint. The parameters containing the raw transaction or a
+          decomposed transaction object, block height and the Merkle proof.
         </p>
       </div>
 
@@ -86,8 +83,13 @@ const Contract = () => {
             mined
           </li>
         </ul>
+        <p className='options'>
+          There are two options to extract the details of two bitcoin
+          transaction: 1) parse-tx) or 2) compose the raw transaction from its
+          parts (concat-tx). Then the hash of the raw transaction (txid) is used
+          in the merkel proof.
+        </p>
       </div>
-
       <div className='contract-uses'>
         <h4>What can this Contract be used for?</h4>
         <p>
@@ -96,12 +98,9 @@ const Contract = () => {
           the amount of the first output can be used to determine how many SIP9
           tokens shoould be sent to the first input of the transaction.
         </p>
-        <p>
-          There are two options to extract the details of two bitcoin
-          transaction: 1) parse-tx) or 2) compose the raw transaction from its
-          parts (concat-tx). Then the hash of the raw transaction (txid) is used
-          in the merkel proof.
-        </p>
+        <div className='witnesses'>
+          <h4>Witnesses</h4>
+        </div>
         <div className='grey-box'>
           <h3>
             <strong>Note:</strong> Witnesses of a segwitbitcoin transaction are

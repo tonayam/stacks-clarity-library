@@ -50,7 +50,7 @@ const Introduction = () => {
 
       <article className='merkle-proof'>
         <p>
-          This library explains how stacks parses bitcoin transactions and block
+          This site explains how stacks parses bitcoin transactions and block
           headers and verifies merkle proofs from the bitcoin chain .
         </p>
         <div className='img'>
