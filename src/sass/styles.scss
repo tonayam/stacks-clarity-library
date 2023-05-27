@@ -27,12 +27,17 @@
     margin: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     max-width: 1800px;
     margin: auto;
     color: $darkTextColor;
     font-style: normal;
+    overflow: hidden;
 }
 
 

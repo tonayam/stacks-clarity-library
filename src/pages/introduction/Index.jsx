@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import headerImg from '../../assests/header-img.png';
 import poxImg from '../../assests/proof-of-transfer.png';
 import blockchain from '../../assests/blockchain.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Introduction = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'linear',
+    });
+  }, []);
+
   return (
     <main className='introduction'>
       <section className='watch'>
         <h1>
           How Does Stacks Watch <span>Bitcoin</span>?
         </h1>
-        <img src={headerImg} alt='header' />
+        <img src={headerImg} alt='header' data-aos='fade-up' />
       </section>
 
-      <article className='p-o-x'>
+      <article className='p-o-x' data-aos='fade-right'>
         <p className='smart-contracts'>
           <strong>Smart Contracts of the Stacks blockchain</strong> have a view
           on the Bitcoin Blockchain: In the contracts, the block header hash of
@@ -25,7 +35,7 @@ const Introduction = () => {
         </div>
       </article>
 
-      <article className='clarity-bitcoin-library'>
+      <article className='clarity-bitcoin-library' data-aos='fade-right'>
         <p>
           The{' '}
           <a
@@ -48,10 +58,10 @@ const Introduction = () => {
         </div>
       </article>
 
-      <article className='merkle-proof'>
+      <article className='merkle-proof' data-aos='fade-right'>
         <p>
-          This site explains how stacks parses bitcoin transactions and block
-          headers and verifies merkle proofs from the bitcoin chain .
+          This page explains how the library parses bitcoin transactions and block
+          headers and verifies merkle proofs from the bitcoin chain.
         </p>
         <div className='img'>
           <img src={blockchain} alt='blockchain' />
